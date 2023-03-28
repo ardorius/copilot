@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.validatePassword = exports.validateEmail = exports.validatePhoneNumber = exports.hello = void 0;
+//remove all spaces from string
 const world = 'wor   ld';
 function hello(who = world) {
     return `Hello ${who}! `;
@@ -18,7 +19,7 @@ function validateEmail(email) {
     return /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(email);
 }
 exports.validateEmail = validateEmail;
-console.log(validateEmail('peter.petrus@pabk.sk')); // true
+console.log(validateEmail('peter.xxx@pabk.sk')); // true
 // validate function password
 function validatePassword(password) {
     return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/.test(password);
@@ -39,3 +40,4 @@ exports.validatePassword = validatePassword;
 // \.                # a dot must occur once
 // [a-z]{2,4}        # a lowercase letter must occur at least twice, but no more than four times
 // $                 # end-of-string
+//regex for phone number

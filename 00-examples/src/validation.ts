@@ -1,3 +1,4 @@
+//remove all spaces from string
 const world = 'wor   ld';
 
 export function hello(who: string = world): string {
@@ -17,7 +18,7 @@ export function validateEmail(email: string): boolean {
   return /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(email);
 }
 
-console.log(validateEmail('peter.petrus@pabk.sk'));// true
+console.log(validateEmail('peter.xxx@pabk.sk'));// true
 
 // validate function password
 export function validatePassword(password: string): boolean {
@@ -41,4 +42,4 @@ export function validatePassword(password: string): boolean {
 // [a-z]{2,4}        # a lowercase letter must occur at least twice, but no more than four times
 // $                 # end-of-string
 
-
+//regex for phone number
