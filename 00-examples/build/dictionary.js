@@ -1,3 +1,4 @@
+"use strict";
 //dictionary of 2 letters ISO country code and their corresponding contry
 const countryCodes = {
     'cz': 'Czech Republic',
@@ -8,10 +9,7 @@ const countryCodes = {
     'fr': 'France',
     'es': 'Spain',
 };
-
-
 //dictionary of 2 letters ISO country code and their answer, question and date in that language
-
 const countryCodes2 = {
     'sk': {
         'answer': 'odpoved',
@@ -28,15 +26,13 @@ const countryCodes2 = {
         'question': 'frage',
         'date': 'datum',
     },
-    'ch': {//Switzerland
+    'ch': {
         'answer': 'antwort',
         'question': 'frage',
         'date': 'datum',
     }
 };
-
 //test countryCodes
 console.log(countryCodes['cz']);
-
 //test countryCodes2
 console.log(countryCodes2['ch']['answer']);

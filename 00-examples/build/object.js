@@ -1,18 +1,6 @@
-interface Person {
-    name: string;
-    age: number;
-    address: {
-        street: string;
-        city: string;
-        country: string;
-    };
-    datebirth: Date;
-    hobbies: string[];
-    isMarried: boolean;
-    children: Person[];
-}
+"use strict";
 //create mock 10 persons
-const person: Person = {
+const person = {
     name: 'Peter',
     age: 30,
     address: {
@@ -27,11 +15,9 @@ const person: Person = {
     country: "",
     city: ""
 };
-
 if (person.address.country === 'Slovakia' && person.address.city === 'Bratislava') {
     console.log('Peter lives in Bratislava');
 }
-
-if(!person.isMarried && person.children.length === 0) {
+if (!person.isMarried && person.children.length === 0) {
     console.log('Peter is not married and has no children');
 }

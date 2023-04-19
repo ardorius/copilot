@@ -1,5 +1,6 @@
+"use strict";
 //create function calculate
-function calculate(a: number, b: number, operator: string): number {
+function calculate(a, b, operator) {
     switch (operator) {
         case '+':
             return a + b;
@@ -13,6 +14,5 @@ function calculate(a: number, b: number, operator: string): number {
             return 0;
     }
 }
-
 //test
 console.log(calculate(1, 2, '+'));

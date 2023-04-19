@@ -1,5 +1,7 @@
 function getArr(): string[] {
-     return [1, 2, 3];
+  //fix code here
+  return ['a', 'b', 'c'];
+    //  return [1, 2, 3];
   }
   
 
@@ -11,5 +13,9 @@ function getArr(): string[] {
   }
   
   function getObj3(): Person {
-    return { name: 100, age: 30, country: 'Chile', city: 'Santiago' };
+    return { name: '100', age: 30, country: 'Chile', city: 'Santiago' };
   }
+
+  //test
+  console.log(getArr());
+  console.log(getObj3());
